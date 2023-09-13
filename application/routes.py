@@ -304,11 +304,11 @@ def book_movie():
     #/ALEX>
 
     if form.validate_on_submit():
-        ticket_prices = {'Adult': 15.0,'Kids': 7.5,'Concession': 10.0}        
+        ticket_prices = {'Adult': 15.0,'Child': 7.5,'Concession': 10.0}        
         total_price = 0
         tickets = [
             ("Adult", form.Adult.data),
-            ("Kids", form.Child.data),
+            ("Child", form.Child.data),
             ("Concession", form.Concession.data)
         ]
         for ticket_type, quantity in tickets:
